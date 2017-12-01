@@ -1,6 +1,6 @@
 <?php
 
-$nomeSite = "Biblioteca da Computação - Unisul - Tubarão/SC";
+$nomeSite = "Biblioteca da Computação";
 $arquivoLogomarca = "";
 
 
