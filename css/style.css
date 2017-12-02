@@ -16,7 +16,7 @@ p {
 }
 .barra-busca{
   margin: 0 0 20px 0;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 15px;
   font-size: 0.9em;
 }
 .botao-buscar{
@@ -32,6 +32,9 @@ p {
 .clear{
   clear: both;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 
 /* TEAM */
 .profile-avatar{
@@ -44,6 +47,43 @@ p {
 .github a:hover{
   color: #00aeeb;
 }
+
+/* NAVBAR */
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  z-index: 99;
+  background: #2b8ae7 !important;
+  border-bottom: none !important;
+  padding: 15px 0 !important;
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #e9e9e9;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 56px;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+
+
 
 /* BARRA DE BUSCA */
 #custom-search-input{

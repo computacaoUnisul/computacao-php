@@ -35,7 +35,7 @@ a, a:hover, a:focus {
 #sidebar {
     width: 250px;
     position: fixed;
-    top: 0;
+    top: 72px;
     left: 0;
     height: 100vh;
     z-index: 999;
@@ -70,7 +70,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 12px 0 12px 15px;
     font-size: 1.1em;
     display: block;
 }
@@ -129,21 +129,6 @@ a.logout, a.logout:hover {
 }
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-#content {
-    width: calc(100% - 250px);
-    padding: 40px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-#content.active {
-    width: 100%;
-}
 
 
 /* ---------------------------------------------------

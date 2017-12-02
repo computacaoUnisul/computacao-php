@@ -42,15 +42,15 @@ require("config/config.php");
 
 <body>
 
+  <?php include("parts/topbar.php"); ?>
+
   <!-- WRAPPER -->
   <div class="wrapper">
 
-  <?php include("menu.php"); ?>
+    <?php include("parts/menu.php"); ?>
 
     <!-- CONTENT -->
     <div id="content">
-      <?php include("topbar.php"); ?>
-
       <?php include("pages.php"); ?>
     </div>
 

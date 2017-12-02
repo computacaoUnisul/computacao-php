@@ -27,17 +27,19 @@
         <h2><i class="fa fa-lock"></i> Efetue login</h2>
         <p>Para acessar os materiais é necessário efetuar login.</p>
 
-        <form action="verifica-login.php" method="post">
+        <form action="verifica-login.php" class="mb-4" method="post">
 
           <div class="form-group">
             <label class="col-form-label" for="login">Usuário: </label>
             <input type="text" class="form-control" id="login" placeholder="Usuário">
           </div>
 
-          <div class="form-group">
+          <div class="form-group cursor-pointer">
             <label class="col-form-label" for="pass">Senha: </label>
             <input type="password" class="form-control" id="pass" placeholder="Senha">
           </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Acessar</button>
 
         </form>
 
