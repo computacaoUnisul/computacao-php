@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 <div class="container-fluid">
   <div class="row row-offcanvas row-offcanvas-left">
     <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
@@ -20,7 +13,7 @@
                 <div id="custom-search-input">
 
                   <form action="index.php" method="get">
-                    <div class="input-group hidden-sm-down col-md-12 no-padding">
+                    <div class="input-group col-md-12 no-padding">
                       <input type="text" class="form-control input-lg" placeholder="Buscar..." />
                       <span class="input-group-btn">
                         <button class="btn btn-info btn-lg botao-buscar" type="submit">
@@ -42,15 +35,27 @@
 
           <li>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Matérias</a>
+
             <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li><a href="materias"><i class="fa fa-list"></i> Listar todas</a></li>
-              <li><a href="#">Arquitetura de computadores</a></li>
-              <li><a href="#">Algoritmos I</a></li>
-              <li><a href="#">Algoritmos II</a></li>
-              <li><a href="#">Grafos</a></li>
-              <li><a href="#">Lógica Booleana</a></li>
-              <li><a href="#">Probabilidade e estatística</a></li>
+              <li><a href="<?php echo urlSite; ?>materias"><i class="fa fa-list"></i> Listar todas</a></li>
+
+              <?php
+
+              $select = $conn->prepare("SELECT * FROM materias ORDER BY mat_nome ASC");
+              $select->execute();
+
+              //verifica se existem registros
+              if($select->rowCount() > 0):
+
+                // estrutura de repetição
+                while($row = $select->fetch(PDO::FETCH_OBJ)): ?>
+
+                <li><a href="<?php echo urlSite; ?>materia/<?php echo limpaUrl($row->mat_nome); ?>"><?php echo $row->mat_nome; ?></a></li>
+
+              <?php endwhile; endif;?>
+
             </ul>
+
           </li>
           <li>
             <a href="#">Portfolio</a>
@@ -58,6 +63,7 @@
           <li>
             <a href="<?php echo urlSite; ?>team/">Team</a>
           </li>
+
         </ul>
 
         <ul class="list-unstyled CTAs">

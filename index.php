@@ -1,7 +1,13 @@
 <?php
+
+//apenas durante desenvolvimento
 ini_set( 'display_errors', '1' );
+
+//arquivo de configuração do sistema
 require("config/config.php");
-?>
+
+//para url's amigáveis
+include("functions/limpaCaracteres.php"); ?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -56,7 +62,6 @@ require("config/config.php");
 
   </div>
 
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -68,7 +73,7 @@ require("config/config.php");
   <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-
+  <!-- custom scroll -->
   <script type="text/javascript">
   $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({

@@ -24,5 +24,4 @@
     <a href="https://github.com/eliasheinzen" target="_blank" class="github"><i class="fa fa-github"></i> Github</a>
   </div>
 
-
 </div>
