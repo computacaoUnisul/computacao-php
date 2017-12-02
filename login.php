@@ -22,10 +22,10 @@
   <div class="container-fluid jumbotron">
     <div class="row justify-content-md-center">
 
-      <div class="col-md-4">
+      <div class="col-md-3">
 
         <h2><i class="fa fa-lock"></i> Efetue login</h2>
-        <p>Para acessar os materiais é necessário efetuar login</p>
+        <p>Para acessar os materiais é necessário efetuar login.</p>
 
         <form action="verifica-login.php" method="post">
 
@@ -41,7 +41,7 @@
 
         </form>
 
-        <p>Não possui conta? <a href="<?php echo urlSite; ?>cadastro.php"><b>Preencha um pré-cadastro.</b></a></p>
+        <p>Não possui conta? <br><a href="<?php echo urlSite; ?>cadastro.php"><b>Preencha um pré-cadastro.</b></a></p>
 
       </div>
     </div>
