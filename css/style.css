@@ -6,6 +6,7 @@ body {
     background: #fafafa;
 }
 
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -27,6 +28,21 @@ p {
 }
 .no-radius{
   border-radius: 0;
+}
+.clear{
+  clear: both;
+}
+
+/* TEAM */
+.profile-avatar{
+  border-radius: 200px;
+}
+.github{}
+.github a{
+  color: #2B79C6;
+}
+.github a:hover{
+  color: #00aeeb;
 }
 
 /* BARRA DE BUSCA */

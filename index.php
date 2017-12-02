@@ -1,7 +1,6 @@
 <?php
 ini_set( 'display_errors', '1' );
 require("config/config.php");
-include("pages.php");
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -48,26 +47,13 @@ include("pages.php");
 
   <?php include("menu.php"); ?>
 
-
     <!-- CONTENT -->
     <div id="content">
+      <?php include("topbar.php"); ?>
 
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-
-          <div class="navbar-header">
-            <button type="button" id="sidebarCollapse" class="btn-lg btn-info navbar-btn">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <span>Mostrar sidebar</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-
-      <?php include("pages/home.php"); ?>
-
+      <?php include("pages.php"); ?>
     </div>
+
   </div>
 
 

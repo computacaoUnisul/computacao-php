@@ -30,7 +30,7 @@
 
     <!-- HOME -->
     <li class="active">
-      <a href="">Home</a>
+      <a href="<?php echo urlSite; ?>">Home</a>
     </li>
 
     <li>
@@ -48,7 +48,7 @@
       <a href="#">Portfolio</a>
     </li>
     <li>
-      <a href="#">Contact</a>
+      <a href="<?php echo urlSite; ?>team/">Team</a>
     </li>
   </ul>
 
