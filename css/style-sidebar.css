@@ -111,11 +111,11 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
-a.download {
+a.perfil {
     background: #fff;
-    color: #7386D5;
+    color: #2B8AE7;
 }
-a.article, a.article:hover {
+a.logout, a.logout:hover {
     background: #303030 !important;
     color: #fff !important;
 }
