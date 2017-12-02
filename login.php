@@ -22,7 +22,7 @@
   <div class="container-fluid jumbotron">
     <div class="row justify-content-md-center justify-content-sm-center">
 
-      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+      <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
         <h2><i class="fa fa-lock"></i> Efetue login</h2>
         <p>Para acessar os materiais é necessário efetuar login.</p>
@@ -36,7 +36,7 @@
 
           <div class="form-group">
             <label class="col-form-label" for="pass">Senha: </label>
-            <input type="text" class="form-control" id="pass" placeholder="Senha">
+            <input type="password" class="form-control" id="pass" placeholder="Senha">
           </div>
 
         </form>
