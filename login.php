@@ -12,29 +12,36 @@
     <!-- Font-awesome -->
     <script src="https://use.fontawesome.com/dd1e1cb31a.js"></script>
 
+    <!-- css do sistema -->
+    <link rel="stylesheet" type="text/css" href="<?php echo urlSite; ?>css/style-login.css">
+
   </head>
 
   <body>
 
-  <div class="container-fluid">
-
+  <div class="container-fluid jumbotron">
     <div class="row justify-content-md-center">
 
-      <div class="col-sm-3">
-        <h2><i class="fa fa-lock"></i> Efetue login</h2>
+      <div class="col-md-4">
 
-        <form>
+        <h2><i class="fa fa-lock"></i> Efetue login</h2>
+        <p>Para acessar os materiais é necessário efetuar login</p>
+
+        <form action="verifica-login.php" method="post">
+
           <div class="form-group">
-            <label class="col-form-label" for="formGroupExampleInput">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            <label class="col-form-label" for="login">Usuário: </label>
+            <input type="text" class="form-control" id="login" placeholder="Usuário">
           </div>
 
           <div class="form-group">
-            <label class="col-form-label" for="formGroupExampleInput2">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            <label class="col-form-label" for="pass">Senha: </label>
+            <input type="text" class="form-control" id="pass" placeholder="Senha">
           </div>
 
         </form>
+
+        <p>Não possui conta? <a href="<?php echo urlSite; ?>cadastro.php"><b>Preencha um pré-cadastro.</b></a></p>
 
       </div>
     </div>

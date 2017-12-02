@@ -12,6 +12,9 @@
     <!-- Font-awesome -->
     <script src="https://use.fontawesome.com/dd1e1cb31a.js"></script>
 
+    <!-- css do sistema -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <!-- Hotjar Tracking Code for oregionalsul.me/computacao -->
     <script>
         (function(h,o,t,j,a,r){

@@ -1,0 +1,24 @@
+body {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #999;
+  background: #333;
+}
+
+.jumbotron {
+ border-radius: 0;
+  background: #333;
+  display: table-cell;
+  vertical-align: middle;
+}
+h1, h2, h3{
+  color: #fff;
+}
+a{
+  color: #1f86f4;
+}
+a:hover{
+  color: #00aeeb;
+}
