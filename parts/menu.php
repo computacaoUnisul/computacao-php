@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row row-offcanvas row-offcanvas-left">
-    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation"> -->
       <!-- nome do site -->
       <nav id="sidebar">
 
@@ -71,6 +71,6 @@
           <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="logout"><i class="fa fa-sign-out"></i> Sair do sistema</a></li>
         </ul>
       </nav>
-    </div>
+    <!-- </div>
   </div>
-</div>
+</div> -->
