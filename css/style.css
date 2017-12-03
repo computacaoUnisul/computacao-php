@@ -3,16 +3,20 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #333;
+    color: #afafaf;
 }
 
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
+}
 
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #afafaf;
 }
 .barra-busca{
   margin: 0 0 20px 0;

@@ -37,7 +37,7 @@
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Matérias</a>
 
             <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li><a href="<?php echo urlSite; ?>materias"><i class="fa fa-list"></i> Listar todas</a></li>
+              <li><a href="<?php echo urlSite; ?>materias"><i class="fa fa-list"></i> Ver todas em lista</a></li>
 
               <?php
 
