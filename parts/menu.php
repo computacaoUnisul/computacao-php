@@ -79,7 +79,24 @@
               <?php endwhile; endif;?>
 
             </ul>
+          </li>
 
+          <li>
+            <a href="#pageSubmenuSemestres" data-toggle="collapse" aria-expanded="false">Semestres</a>
+            <ul class="collapse list-unstyled" id="pageSubmenuSemestres">
+              <li><a href="#">2016/1</a></li>
+              <li><a href="#">2016/2</a></li>
+              <li><a href="#">2017/1</a></li>
+              <li><a href="#">2017/2</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#pageSubmenuMaterial" data-toggle="collapse" aria-expanded="false">Conteúdos</a>
+            <ul class="collapse list-unstyled" id="pageSubmenuMaterial">
+              <li><a href="#">Trabalhos</a></li>
+              <li><a href="#">Provas</a></li>
+            </ul>
           </li>
 
           <li>
@@ -91,7 +108,7 @@
 
         </ul>
 
-        <ul class="list-unstyled CTAs">
+        <ul class="list-unstyled CTAs botoes-sidebar">
           <li><a href="#" class="perfil"><i class="fa fa-user"></i> Meu perfil</a></li>
           <li><a href="<?php echo urlSite; ?>login.php" class="logout"><i class="fa fa-sign-out"></i> Sair do sistema</a></li>
         </ul>
