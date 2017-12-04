@@ -3,7 +3,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #212529;
+    color: #afafaf;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
 }
 
 p {
@@ -11,11 +16,18 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #afafaf;
+}
+a{
+  color: #40B2FB;
+}
+.dados-professor{}
+.dados-professor p{
+  line-height: 1em;
 }
 .barra-busca{
   margin: 0 0 20px 0;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 15px;
   font-size: 0.9em;
 }
 .botao-buscar{
@@ -28,6 +40,61 @@ p {
 .no-radius{
   border-radius: 0;
 }
+.clear{
+  clear: both;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* TEAM */
+.profile-avatar{
+  border-radius: 200px;
+}
+.github{}
+.github a{
+  color: #2B79C6;
+}
+.github a:hover{
+  color: #00aeeb;
+}
+
+/* NAVBAR */
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  z-index: 99;
+  background: #2b8ae7 !important;
+  border-bottom: none !important;
+  padding: 15px 0 !important;
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: #e9e9e9;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 56px;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+
+
 
 /* BARRA DE BUSCA */
 #custom-search-input{

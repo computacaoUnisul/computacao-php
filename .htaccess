@@ -1,0 +1,16 @@
+#url amigavel
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+</IfModule>
+
+#impede a listagem de diretorio
+IndexIgnore *
+Options -Indexes
+
+
+#ErrorDocument 400 /sua-pagina-erro-400
+#ErrorDocument 404 erros/404.php
+#ErrorDocument 500 /página-para-erro-500

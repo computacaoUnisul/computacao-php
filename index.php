@@ -1,8 +1,13 @@
 <?php
+
+//apenas durante desenvolvimento
 ini_set( 'display_errors', '1' );
+
+//arquivo de configuração do sistema
 require("config/config.php");
-include("pages.php");
-?>
+
+//para url's amigáveis
+include("functions/limpaCaracteres.php"); ?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -43,33 +48,19 @@ include("pages.php");
 
 <body>
 
+  <?php include("parts/topbar.php"); ?>
+
   <!-- WRAPPER -->
   <div class="wrapper">
 
-  <?php include("menu.php"); ?>
-
+    <?php include("parts/menu.php"); ?>
 
     <!-- CONTENT -->
     <div id="content">
-
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-
-          <div class="navbar-header">
-            <button type="button" id="sidebarCollapse" class="btn-lg btn-info navbar-btn">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <span>Mostrar sidebar</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-
-      <?php include("pages/home.php"); ?>
-
+      <?php include("pages.php"); ?>
     </div>
-  </div>
 
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -82,7 +73,7 @@ include("pages.php");
   <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-
+  <!-- custom scroll -->
   <script type="text/javascript">
   $(document).ready(function () {
     $("#sidebar").mCustomScrollbar({
