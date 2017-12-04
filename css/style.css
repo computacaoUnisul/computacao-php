@@ -21,6 +21,10 @@ p {
 a{
   color: #40B2FB;
 }
+.dados-professor{}
+.dados-professor p{
+  line-height: 1em;
+}
 .barra-busca{
   margin: 0 0 20px 0;
   padding: 0 10px 0 15px;

@@ -38,6 +38,8 @@ $select->execute(array("Desativado"));
     // estrutura de repetição
     while($row = $select->fetch(PDO::FETCH_OBJ)): ?>
     <tr>
+
+      <!-- NOME DA MATÉRIA -->
       <td>
         <?php if($row->mat_status == "Pendente"){
           echo $row->mat_nome;
@@ -45,12 +47,32 @@ $select->execute(array("Desativado"));
         <span class="badge badge-warning">Aprovação pendente</span>
         <?php
         } else { ?>
-          <a href="<?php echo urlSite; ?>materia/<?php echo limpaUrl($row->mat_nome); ?>"><?php echo $row->mat_nome; ?></a>
+          <a href="<?php echo urlSite."materia/".$row->mat_alias; ?>"><?php echo $row->mat_nome; ?></a>
         <?php } ?>
       </td>
-      <td><?php echo $row->prof_nome." ".$row->prof_sobrenome; ?></td>
-      <td><?php echo $row->prof_email; ?></td>
-      <td><?php echo $row->usu_nome." ".$row->usu_sobrenome; ?></td>
+
+      <!-- NOME DO PROFESSOR -->
+      <td>
+        <?php if($row->mat_status <> "Pendente"){ ?>
+        <a href="<?php echo urlSite."professor/".$row->prof_alias; ?>">
+          <?php echo $row->prof_nome." ".$row->prof_sobrenome; ?>
+        </a>
+        <?php
+        } else {
+          echo $row->prof_nome." ".$row->prof_sobrenome;
+        } ?>
+      </td>
+
+      <!-- E-MAIL DO PROFESSOR -->
+      <td>
+        <?php echo $row->prof_email; ?>
+      </td>
+
+      <!-- USUÁRIO QUE CADASTROU MATÉRIA -->
+      <td>
+        <?php echo $row->usu_nome." ".$row->usu_sobrenome; ?>
+      </td>
+
     </tr>
     <?php endwhile; endif;?>
 

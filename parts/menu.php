@@ -58,7 +58,7 @@
 
           </li>
           <li>
-            <a href="#">Qisso?</a>
+            <a href="<?php echo urlSite; ?>qisso/">Qisso?</a>
           </li>
           <li>
             <a href="<?php echo urlSite; ?>team/">Team</a>
@@ -67,8 +67,8 @@
         </ul>
 
         <ul class="list-unstyled CTAs">
-          <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="perfil"><i class="fa fa-user"></i> Meu perfil</a></li>
-          <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="logout"><i class="fa fa-sign-out"></i> Sair do sistema</a></li>
+          <li><a href="#" class="perfil"><i class="fa fa-user"></i> Meu perfil</a></li>
+          <li><a href="<?php echo urlSite; ?>login.php" class="logout"><i class="fa fa-sign-out"></i> Sair do sistema</a></li>
         </ul>
       </nav>
     <!-- </div>
