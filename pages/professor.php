@@ -45,8 +45,8 @@ $select = $conn->prepare("SELECT *
         </div>
 
         <div class="line" style="margin: 0 0 30px 0;"></div>
-
         <h5>Matérias lecionadas</h5>
+
         <div class="table-responsive">
           <table class="table table-striped table-dark">
             <!-- <thead>
