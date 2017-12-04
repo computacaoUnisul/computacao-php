@@ -37,7 +37,7 @@ $select = $conn->prepare("SELECT *
 
             <?php if(!empty($linha->prof_descricao)){
               echo "<div style='margin: 15px 0 15px 0; border: 1px solid #383e44;'></div>";
-              echo $linha->prof_descricao;
+              echo $linha->prof_descricao."<br/><br/>";
             }
             ?>
 
