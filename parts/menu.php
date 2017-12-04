@@ -91,7 +91,7 @@
 
         </ul>
 
-        <ul class="list-unstyled CTAs">
+        <ul class="list-unstyled CTAs botoes-sidebar">
           <li><a href="#" class="perfil"><i class="fa fa-user"></i> Meu perfil</a></li>
           <li><a href="<?php echo urlSite; ?>login.php" class="logout"><i class="fa fa-sign-out"></i> Sair do sistema</a></li>
         </ul>

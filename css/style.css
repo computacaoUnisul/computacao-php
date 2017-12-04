@@ -128,3 +128,13 @@ a{
 #custom-search-input .glyphicon-search{
     font-size: 23px;
 }
+
+
+/* TEAM */
+.team{}
+.team a{
+  color: #edd502;
+}
+.team a:hover{
+  color: #2B8AE7;
+}
