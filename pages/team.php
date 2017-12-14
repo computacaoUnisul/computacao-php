@@ -29,12 +29,4 @@
     <span class="badge badge-success">Curador</span>
   </div>
 
-  <div class="col-sm-12 col-md-4 col-lg-3 col-xll-3 text-center mb-5">
-    <img src="<?php echo urlSite; ?>assets/team/henriquesombrio.jpg" width="60%" class="profile-avatar mb-3"/>
-    <h4>Henrique Sombrio</h4>
-    <span>Tenta fazer bugar</span><br>
-    <a href="https://github.com/HenriqueSombrio" target="_blank" class="github"><i class="fa fa-github"></i> Github</a><br/>
-    <span class="badge badge-danger">Novato</span>
-  </div>
-
 </div>
