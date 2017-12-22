@@ -29,4 +29,12 @@
     <span class="badge badge-success">Curador</span>
   </div>
 
+  <div class="col-sm-12 col-md-4 col-lg-3 col-xll-3 text-center mb-5">
+    <img src="<?php echo urlSite; ?>assets/team/tiagocunha.jpg" width="60%" class="profile-avatar mb-3"/>
+    <h4>Tiago Cunha</h4>
+    <span>Não trouxe geladas</span><br>
+    <a href="https://github.com/tiagocunha" target="_blank" class="github"><i class="fa fa-github"></i> Github</a><br/>
+    <span class="badge badge-primary">Curador</span>
+  </div>
+
 </div>
