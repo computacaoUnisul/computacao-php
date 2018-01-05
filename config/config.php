@@ -2,7 +2,7 @@
 
 $nomeSite = "Biblioteca da Computação";
 $arquivoLogomarca = "";
-$urlSite = "http://oregionalsul.me/computacao/";
+$urlSite = "http://localhost/computacao/";
 
 // o site será liberado ao público, ou seja, não necessita de login e senha
 $bloqueiaSite = false;
@@ -16,9 +16,9 @@ define("urlSite", $urlSite);
 //Conexão com o Banco de Dados
 try{
     $driver = 'mysql';
-    $host = 'oregionalsul.me';
-    $usuario = 'pweb';
-    $senha = 'pweb';
+    $host = 'localhost';
+    $usuario = 'root';
+    $senha = '';
     $dbname = 'computacao';
 
     $conn = new PDO("$driver:host=$host;dbname=$dbname", $usuario, $senha);
