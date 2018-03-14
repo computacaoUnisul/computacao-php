@@ -1,3 +1,5 @@
+
+
 <h1>Envie material</h1>
 <p>Colabore e envie materiais, tudo o que for enviado ficará pendente até a aprovação de um administrador.</p>
 
@@ -43,9 +45,20 @@
     <div class="form-group col-sm-12 col-md-12 col-lg-4">
       <label for="selectMateria">Matéria</label><br/>
       <select id="selectMateria" class="custom-select" style="width: 100%;">
-        <option selected>Grafos</option>
-        <option value="Prova/Avaliação">Arquitetura de computadores</option>
-        <option value="Trabalho">Fundamentos de Banco de Dados</option>
+        <option selected>Selecione uma matéria</option>
+        <?php
+        $select = $conn->prepare("SELECT * FROM materias ORDER BY mat_nome ASC");
+        $select->execute();
+
+        //verifica se existem registros
+        if($select->rowCount() > 0):
+
+          // estrutura de repetição
+          while($row = $select->fetch(PDO::FETCH_OBJ)): ?>
+
+          <option value="<?php echo $row->mat_id; ?>"><?php echo $row->mat_nome; ?></option>
+
+        <?php endwhile; endif;?>
       </select>
 
       <br>
@@ -106,27 +119,11 @@
 
   </div>
 
-  <!-- FILE -->
-  <div class="form-row">
 
-      <label class="custom-file" for="file2">
-        <input type="file" id="file2" class="custom-file-input">
-        <span class="custom-file-control"></span>
-      </label>
-    
+  <div class="form-row">
+    <div class="form-group col-sm-12 col-md-12 col-lg-7">
+      <input type="submit" class="btn btn-success pull-right" style="cursor: pointer;" value="Cadastrar e selecionar arquivos"/>
+    </div>
   </div>
 
 </form>
-
-<script type="text/javascript">
-$custom-file-text: (
-  placeholder: (
-    en: "Choose file...",
-    es: "Seleccionar archivo..."
-  ),
-  button-label: (
-    en: "Browse",
-    es: "Navegar"
-  )
-);
-</script>

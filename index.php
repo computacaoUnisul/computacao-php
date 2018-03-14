@@ -32,6 +32,12 @@ include("functions/limpaCaracteres.php"); ?>
   <!-- Scrollbar Custom CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
+
+  <!-- scripts Dropzone JS -->
+  <link href="<?php echo urlSite; ?>css/dropzone.css" type="text/css" rel="stylesheet" />
+  <script src="<?php echo urlSite; ?>js/dropzone.js"></script>
+
+
   <!-- Hotjar Tracking Code for oregionalsul.me/computacao -->
   <script>
   (function(h,o,t,j,a,r){
