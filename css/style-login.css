@@ -1,18 +1,9 @@
 body {
-  display: table;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  background:rgba(0, 0, 0, 0.5) url("../assets/imgs/bg-login.png");
+  background-size: cover;
   color: #999;
-  background: #333;
 }
 
-.jumbotron {
- border-radius: 0;
-  background: #333;
-  display: table-cell;
-  vertical-align: middle;
-}
 h1, h2, h3{
   color: #fff;
 }
@@ -24,4 +15,22 @@ a:hover{
 }
 .cursor-pointer{
   cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+footer ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
 }
